@@ -54,6 +54,11 @@
             "id":  "lkis-radarr-custom-format-x265",
             "template":  "radarr/includes/custom_formats/radarr-custom-format-x265.yml",
             "hidden":  false
+        },
+        {
+            "id":  "lkis-radarr-global-custom-format",
+            "template":  "radarr/includes/custom_formats/radarr-global-custom-format.yml",
+            "hidden":  false
         }
     ],
     "sonarr": [
@@ -140,6 +145,11 @@
         {
             "id":  "lkis-sonarr-custom-format-x265",
             "template":  "sonarr/includes/custom_formats/sonarr-custom-format-x265.yml",
+            "hidden":  false
+        },
+        {
+            "id":  "lkis-sonarr-global-custom-format",
+            "template":  "sonarr/includes/custom_formats/sonarr-global-custom-format.yml",
             "hidden":  false
         }
     ]

@@ -22,7 +22,6 @@ sonarr:
 
     include:
       - template: sonarr-quality-definition-anime
-      # Profile souhaité - veuillez à avoir les lignes correspondantes activées
       # --- Profile VOSTFR ---
       - template: lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr
       # --- Profile MULTi.VF ---
@@ -52,57 +51,5 @@ sonarr:
 
       - template: lkis-sonarr-custom-format-audio
       - template: lkis-sonarr-custom-format-x265
-
-
-    # Formats Personnalisés (Custom Formats) :
-    # https://recyclarr.dev/reference/configuration/custom-formats/
-    custom_formats:
-      # Optionnels
-      # Ils sont optionnels et peuvent ne pas fonctionner correctement avec les profiles FR
-      # - trash_ids:
-          # - 32b367365729d530ca1c124a0b180c64 # Bad Dual Groups
-          # - 82d40da2bc6923f41e14394075dd4b03 # No-RlsGroup
-          # - e1a997ddb54e3ecbfe06341ad323c458 # Obfuscated
-          # - 06d66ab109d4d2eddb2794d21526d140 # Retags
-          # - 1b3994c551cbb92a2c781af061f4ab44 # Scene
-        # assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-          # - name: FR-MULTi-VF-WEB-1080p
-          # - name: FR-MULTi-VO-WEB-1080p
-
-      # Décommenter le score associé si vous ne voulez pas de FanSUB.
-      - trash_ids:
-          - 84f0acbda9c0c9de783894fb66df25aa  # FanSUB
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: -10000
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: -10000
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: -10000
-
-      # Priorité au freeleech si dispo
-      - trash_ids:
-          - d7c747094a7c65f4c2de083c24899e8b
-        assign_scores_to:
-          - name: FR-VOSTFR-WEB-1080p
-            score: 101
-          - name: FR-MULTi-VF-WEB-1080p
-            score: 101
-          - name: FR-MULTi-VO-WEB-1080p
-            score: 101
-          - name: FR-ANIME-MULTi
-            score: 101
-          - name: FR-ANIME-VOSTFR
-            score: 101
-          - name: FR-VOSTFR-WEB-1080p-x265
-            score: 101
-          - name: FR-MULTi-VF-WEB-1080p-x265
-            score: 101
-          - name: FR-MULTi-VO-WEB-1080p-x265
-            score: 101
-          - name: FR-ANIME-MULTi-x265
-            score: 101
-          - name: FR-ANIME-VOSTFR-x265
-            score: 101
+      - template: lkis-sonarr-global-custom-format
 
