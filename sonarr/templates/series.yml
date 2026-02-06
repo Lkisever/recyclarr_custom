@@ -13,7 +13,7 @@
 # Definition d'une instance : https://recyclarr.dev/reference/configuration/basic/
 sonarr:
   lkis-series-bluray-web-1080p:
-    base_url: !secret sonar_url
+    base_url: !secret sonarr_url
     api_key: !secret sonarr_apikey
 
     # Pour initialisation, à commenter ensuite
