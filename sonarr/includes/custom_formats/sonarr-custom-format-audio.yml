@@ -34,11 +34,7 @@ custom_formats:
   - trash_ids:
       - 7ae924ee9b2f39df3283c6c0beb8a2aa # VOF
     assign_scores_to:
-      # - name: FR-VOSTFR-HD
-        # score: 101
-      # - name: FR-MULTi-VF-HD
-        # score: 101
-      - name: FR-MULTi-VO-HD
+      - name: FR-VOSTFR-WEB-1080p
         # score: 101
   - trash_ids:
       - b6816a0e1d4b64bf3550ad3b74b009b6 # VFI
@@ -112,11 +108,7 @@ custom_formats:
   - trash_ids:
       - 802dd70b856c423a9b0cb7f34ac42be1 # VOQ
     assign_scores_to:
-      # - name: FR-VOSTFR-HD
-        # score: 101
-      # - name: FR-MULTi-VF-HD
-        # score: 101
-      - name: FR-MULTi-VO-HD
+      - name: FR-VOSTFR-WEB-1080p
         # score: 101
   - trash_ids:
       - 82085412d9a53ba8d8e46fc624eb701d # VQ
@@ -144,9 +136,5 @@ custom_formats:
   - trash_ids:
       - 0ce1e39a4676c6692ce47935278dac76 # VFB
     assign_scores_to:
-      # - name: FR-VOSTFR-HD
-        # score: 101
-      # - name: FR-MULTi-VF-HD
-        # score: 101
-      - name: FR-MULTi-VO-HD
+      - name: FR-VOSTFR-WEB-1080p
         # score: 101
