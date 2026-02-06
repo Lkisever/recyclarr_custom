@@ -47,7 +47,7 @@
         },
         {
             "id":  "lkis-radarr-custom-format-audio",
-            "template":  "radarr/custom_formats/radarr-custom-format-audio.yml",
+            "template":  "radarr/includes/custom_formats/radarr-custom-format-audio.yml",
             "hidden":  false
         },
         {

@@ -14,11 +14,11 @@ custom_formats:
       # - name: FR-VOSTFR-HD
         # score: 101
       - name: FR-MULTi-VF-HD
-        score: 101
+        score: 500
       - name: FR-MULTi-VO-HD
         score: 101
       - name: FR-MULTi-VF-HD-x265
-        score: 101
+        score: 500
       - name: FR-MULTi-VO-HD-x265
         score: 101
   - trash_ids:
@@ -36,11 +36,11 @@ custom_formats:
       # - name: FR-VOSTFR-HD
         # score: 101
       - name: FR-MULTi-VF-HD
-        score: 0
+        score: 500
       - name: FR-MULTi-VO-HD
         score: 0
       - name: FR-MULTi-VF-HD-x265
-        score: 0
+        score: 500
       - name: FR-MULTi-VO-HD-x265
         score: 0
   - trash_ids:
@@ -49,11 +49,11 @@ custom_formats:
       # - name: FR-VOSTFR-HD
         # score: 101
       - name: FR-MULTi-VF-HD
-        score: 101
+        score: 500
       - name: FR-MULTi-VO-HD
         score: 101
       - name: FR-MULTi-VF-HD-x265
-        score: 101
+        score: 500
       - name: FR-MULTi-VO-HD-x265
         score: 101
   - trash_ids:
