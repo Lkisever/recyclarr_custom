@@ -83,7 +83,7 @@ sonarr:
 
       # Priorité au freeleech si dispo
       - trash_ids:
-          - 0d91270a7255a1e388fa85e959f359d8
+          - d7c747094a7c65f4c2de083c24899e8b
         assign_scores_to:
           - name: FR-VOSTFR-WEB-1080p
             score: 101

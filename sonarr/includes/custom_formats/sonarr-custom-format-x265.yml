@@ -3,7 +3,7 @@
 custom_formats:
   # Décommentez les lignes suivantes pour accepter les releases en x265 HD avec du HDR/DV
   - trash_ids:
-      - dc98083864ea246d05a42df0d05f81cc # x265 (HD)
+      - c9eafd50846d299b862ca9bb6ea91950 # x265 (HD)
     assign_scores_to:
           - name: FR-VOSTFR-WEB-1080p
             score: 2000

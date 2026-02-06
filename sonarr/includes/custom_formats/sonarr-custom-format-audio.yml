@@ -9,7 +9,7 @@ custom_formats:
   # Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :
   # https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions
   - trash_ids:
-      - 404c08fd0bd67f39b4d8e5709319094e # VFF
+      - 2c29a39a4fdfd6d258799bc4c09731b9 # VFF
     assign_scores_to:
       - name: FR-VOSTFR-WEB-1080p
         score: 101
@@ -32,7 +32,7 @@ custom_formats:
       - name: FR-ANIME-VOSTFR-x265
         score: 101
   - trash_ids:
-      - 4cafa20d5584f6ba1871d1b8941aa3cb # VOF
+      - 7ae924ee9b2f39df3283c6c0beb8a2aa # VOF
     assign_scores_to:
       # - name: FR-VOSTFR-HD
         # score: 101
@@ -41,7 +41,7 @@ custom_formats:
       - name: FR-MULTi-VO-HD
         # score: 101
   - trash_ids:
-      - 52772f1cad6b5d26c2551f79bc538a50 # VFI
+      - b6816a0e1d4b64bf3550ad3b74b009b6 # VFI
     assign_scores_to:
       - name: FR-VOSTFR-WEB-1080p
         score: 101
@@ -64,7 +64,7 @@ custom_formats:
       - name: FR-ANIME-VOSTFR-x265
         score: 101
   - trash_ids:
-      - 29b5f7b1a5f20f64228786c3ab1bdc7d # VF2
+      - 34789ec3caa819f087e23bbf9999daf7 # VF2
     assign_scores_to:
       - name: FR-VOSTFR-WEB-1080p
         score: 101
@@ -87,7 +87,7 @@ custom_formats:
       - name: FR-ANIME-VOSTFR-x265
         score: 101
   - trash_ids:
-      - b6ace47331a1d3b77942fc18156f6df6 # VFQ
+      - 7a7f4e4f58bd1058440236d033a90b67 # VFQ
     assign_scores_to:
       - name: FR-VOSTFR-WEB-1080p
         score: -10000
@@ -110,7 +110,7 @@ custom_formats:
       - name: FR-ANIME-VOSTFR-x265
         score: -10000
   - trash_ids:
-      - f7caa1942be5cc547c266bd3dbc2cda9 # VOQ
+      - 802dd70b856c423a9b0cb7f34ac42be1 # VOQ
     assign_scores_to:
       # - name: FR-VOSTFR-HD
         # score: 101
@@ -119,7 +119,7 @@ custom_formats:
       - name: FR-MULTi-VO-HD
         # score: 101
   - trash_ids:
-      - 95aa50f71a01c82354a7a2b385f1c4d8 # VQ
+      - 82085412d9a53ba8d8e46fc624eb701d # VQ
     assign_scores_to:
       - name: FR-VOSTFR-WEB-1080p
         score: -10000
@@ -142,7 +142,7 @@ custom_formats:
       - name: FR-ANIME-VOSTFR-x265
         score: -10000
   - trash_ids:
-      - b3fb499641d7b3c2006be1d9eb014cb3 # VFB
+      - 0ce1e39a4676c6692ce47935278dac76 # VFB
     assign_scores_to:
       # - name: FR-VOSTFR-HD
         # score: 101
