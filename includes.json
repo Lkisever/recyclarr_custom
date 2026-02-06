@@ -63,18 +63,8 @@
             "hidden":  false
         },
         {
-            "id":  "lkis-sonarr-v4-custom-formats-1080p-french-anime-multi-x265",
-            "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-1080p-french-anime-multi-x265.yml",
-            "hidden":  false
-        },
-        {
             "id":  "lkis-sonarr-v4-custom-formats-1080p-french-anime-vostfr",
             "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr.yml",
-            "hidden":  false
-        },
-        {
-            "id":  "lkis-sonarr-v4-custom-formats-1080p-french-anime-vostfr-x265",
-            "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr-x265.yml",
             "hidden":  false
         },
         {
@@ -83,28 +73,13 @@
             "hidden":  false
         },
         {
-            "id":  "lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf-x265",
-            "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf-x265.yml",
-            "hidden":  false
-        },
-        {
             "id":  "lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo",
             "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo.yml",
             "hidden":  false
         },
         {
-            "id":  "lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo-x265",
-            "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo-x265.yml",
-            "hidden":  false
-        },
-        {
             "id":  "lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr",
             "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr.yml",
-            "hidden":  false
-        },
-        {
-            "id":  "lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr-x265",
-            "template":  "sonarr/includes/custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr-x265.yml",
             "hidden":  false
         },
         {
@@ -155,6 +130,16 @@
         {
             "id":  "lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr-x265",
             "template":  "sonarr/includes/quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr-x265.yml",
+            "hidden":  false
+        },
+        {
+            "id":  "lkis-sonarr-custom-format-audio",
+            "template":  "sonarr/includes/custom_formats/sonarr-custom-format-audio.yml",
+            "hidden":  false
+        },
+        {
+            "id":  "lkis-sonarr-custom-format-x265",
+            "template":  "sonarr/includes/custom_formats/sonarr-custom-format-x265.yml",
             "hidden":  false
         }
     ]

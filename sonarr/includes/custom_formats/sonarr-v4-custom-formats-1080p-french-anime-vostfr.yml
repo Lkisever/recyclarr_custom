@@ -81,3 +81,4 @@ custom_formats:
       - dbfc0a4b5cb4cbd693311c4482ae9683 # FR WEB Tier 03
     assign_scores_to:
       - name: FR-ANIME-VOSTFR
+      - name: FR-ANIME-VOSTFR-x265

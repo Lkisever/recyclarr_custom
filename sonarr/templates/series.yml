@@ -12,7 +12,7 @@
 
 # Definition d'une instance : https://recyclarr.dev/reference/configuration/basic/
 sonarr:
-  series:
+  lkis-series-bluray-web-1080p:
     base_url: !secret sonar_url
     api_key: !secret sonarr_apikey
 
@@ -24,35 +24,35 @@ sonarr:
       - template: sonarr-quality-definition-anime
       # Profile souhaité - veuillez à avoir les lignes correspondantes activées
       # --- Profile VOSTFR ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr.yml
+      - template: lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr
       # --- Profile MULTi.VF ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf.yml
+      - template: lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf
       # --- Profile MULTi.VO ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo.yml
+      - template: lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo
       # --- Profile Anime MULTi ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-multi.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-multi.yml
+      - template: lkis-sonarr-v4-quality-profile-1080p-french-anime-multi
       # --- Profile Anime VOSTFR ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-vostfr.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr.yml
+      - template: lkis-sonarr-v4-quality-profile-1080p-french-anime-vostfr
       # --- Profile VOSTFR x265 ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr-x265.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr-x265.yml
+      - template: lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr-x265
       # --- Profile MULTi.VF x265 ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf-x265.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf-x265.yml
+      - template: lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf-x265
       # --- Profile MULTi.VO x265 ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo-x265.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo-x265.yml
+      - template: lkis-sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo-x265
       # --- Profile Anime MULTi ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-multi-x265.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-multi-x265.yml
+      - template: lkis-sonarr-v4-quality-profile-1080p-french-anime-multi-x265
       # --- Profile Anime VOSTFR ---
-      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-vostfr-x265.yml
-      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr-x265.yml
+      - template: lkis-sonarr-v4-quality-profile-1080p-french-anime-vostfr-x265
+
+      - template: lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr
+      - template: lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf
+      - template: lkis-sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo
+      - template: lkis-sonarr-v4-custom-formats-1080p-french-anime-multi
+      - template: lkis-sonarr-v4-custom-formats-1080p-french-anime-vostfr
+
+      - template: lkis-sonarr-custom-format-audio
+      - template: lkis-sonarr-custom-format-x265
+
 
     # Formats Personnalisés (Custom Formats) :
     # https://recyclarr.dev/reference/configuration/custom-formats/
@@ -65,27 +65,6 @@ sonarr:
           # - e1a997ddb54e3ecbfe06341ad323c458 # Obfuscated
           # - 06d66ab109d4d2eddb2794d21526d140 # Retags
           # - 1b3994c551cbb92a2c781af061f4ab44 # Scene
-        # assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-          # - name: FR-MULTi-VF-WEB-1080p
-          # - name: FR-MULTi-VO-WEB-1080p
-
-      # Décommentez les lignes suivantes pour accepter les releases en x265 HD avec du HDR/DV
-      - trash_ids:
-          - 47435ece6b99a0b477caf360e79ba0bb # x265 (HD)
-        assign_scores_to:
-          - name: FR-VOSTFR-WEB-1080p-x265
-            score: 2000
-          - name: FR-MULTi-VF-WEB-1080p-x265
-            score: 2000
-          - name: FR-MULTi-VO-WEB-1080p-x265
-            score: 2000
-          - name: FR-ANIME-MULTi-x265
-            score: 2000
-          - name: FR-ANIME-VOSTFR-x265
-            score: 2000
-      # - trash_ids:
-          # - 9b64dff695c2115facf1b6ea59c9bd07 # x265 (no HDR/DV)
         # assign_scores_to:
           # - name: FR-VOSTFR-WEB-1080p
           # - name: FR-MULTi-VF-WEB-1080p
@@ -127,82 +106,3 @@ sonarr:
           - name: FR-ANIME-VOSTFR-x265
             score: 101
 
-      # ===== Versions françaises =====
-      # Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases
-      # avec. Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un
-      # certain type d'audio français.
-      # Par exemple si vous préférez la VFF : VFF + VF2 à 101, VFQ à -101, le reste à 0.
-      # Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :
-      # https://trash-guides.info/Sadarr/sadarr-setup-quality-profiles-french-fr/#french-audio-versions
-      - trash_ids:
-          - 2c29a39a4fdfd6d258799bc4c09731b9 # VFF
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 7ae924ee9b2f39df3283c6c0beb8a2aa # VOF
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - b6816a0e1d4b64bf3550ad3b74b009b6 # VFI
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 34789ec3caa819f087e23bbf9999daf7 # VF2
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 7a7f4e4f58bd1058440236d033a90b67 # VFQ
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 802dd70b856c423a9b0cb7f34ac42be1 # VOQ
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 82085412d9a53ba8d8e46fc624eb701d # VQ
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101
-      - trash_ids:
-          - 0ce1e39a4676c6692ce47935278dac76 # VFB
-        assign_scores_to:
-          # - name: FR-VOSTFR-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VF-WEB-1080p
-            # score: 101
-          # - name: FR-MULTi-VO-WEB-1080p
-            # score: 101

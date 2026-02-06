@@ -11,7 +11,7 @@
 
 # Definition d'une instance : https://recyclarr.dev/reference/configuration/basic/
 radarr:
-  movies:
+  lkis-movies-hd-bluray-web:
     base_url: !secret radarr_url
     api_key: !secret radarr_apikey
 

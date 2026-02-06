@@ -6,7 +6,7 @@ quality_profiles:
       allowed: false
       until_quality: Bluray|WEB 1080p
       until_score: 10000
-    min_format_score: 3500
+    min_format_score: 4000
     score_set: french-multi-vf
     quality_sort: top
     qualities:

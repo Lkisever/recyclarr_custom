@@ -71,3 +71,4 @@ custom_formats:
       - 84f0acbda9c0c9de783894fb66df25aa # FanSUB
     assign_scores_to:
       - name: FR-VOSTFR-WEB-1080p
+      - name: FR-VOSTFR-WEB-1080p-x265

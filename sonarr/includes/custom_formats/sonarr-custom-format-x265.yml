@@ -1,0 +1,33 @@
+# Formats Personnalisés (Custom Formats) :
+# https://recyclarr.dev/reference/configuration/custom-formats/
+custom_formats:
+  # Décommentez les lignes suivantes pour accepter les releases en x265 HD avec du HDR/DV
+  - trash_ids:
+      - dc98083864ea246d05a42df0d05f81cc # x265 (HD)
+    assign_scores_to:
+          - name: FR-VOSTFR-WEB-1080p
+            score: 2000
+          - name: FR-MULTi-VF-WEB-1080p
+            score: 2000
+          - name: FR-MULTi-VO-WEB-1080p
+            score: 2000
+          - name: FR-ANIME-MULTi
+            score: 2000
+          - name: FR-ANIME-VOSTFR
+            score: 2000
+          - name: FR-VOSTFR-WEB-1080p-x265
+            score: 2000
+          - name: FR-MULTi-VF-WEB-1080p-x265
+            score: 2000
+          - name: FR-MULTi-VO-WEB-1080p-x265
+            score: 2000
+          - name: FR-ANIME-MULTi-x265
+            score: 2000
+          - name: FR-ANIME-VOSTFR-x265
+            score: 2000
+  # - trash_ids:
+      # - 839bea857ed2c0a8e084f3cbdbd65ecb # x265 (no HDR/DV)
+    # assign_scores_to:
+      # - name: FR-VOSTFR-HD
+      # - name: FR-MULTi-VF-HD
+      # - name: FR-MULTi-VO-HD
