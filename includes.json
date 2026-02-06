@@ -1,0 +1,17 @@
+[
+  {
+    "id": "radarr-quality-hd",
+    "template": "radarr/includes/quality-profiles/hd-bluray.yml",
+    "hidden": false
+  },
+  {
+    "id": "radarr-quality-uhd",
+    "template": "radarr/includes/quality-profiles/uhd-bluray.yml",
+    "hidden": false
+  },
+  {
+    "id": "sonarr-quality-hd",
+    "template": "sonarr/includes/quality-profiles/tv-hd.yml",
+    "hidden": false
+  }
+]

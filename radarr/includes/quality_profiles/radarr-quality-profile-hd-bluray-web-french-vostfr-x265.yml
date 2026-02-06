@@ -1,0 +1,17 @@
+quality_profiles:
+  - name: FR-VOSTFR-HD-x265
+    reset_unmatched_scores:
+      enabled: true
+    upgrade:
+      allowed: false
+      until_quality: Bluray|WEB 1080p
+      until_score: 10000
+    min_format_score: 3500
+    score_set: french-vostfr
+    quality_sort: top
+    qualities:
+      - name: Bluray|WEB 1080p
+        qualities:
+          - Bluray-1080p
+          - WEBDL-1080p
+          - WEBRip-1080p
