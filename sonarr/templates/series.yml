@@ -15,6 +15,8 @@ sonarr:
   series:
     base_url: !secret sonar_url
     api_key: !secret sonarr_apikey
+
+    # Pour initialisation, à commenter ensuite
     # delete_old_custom_formats: true
     # replace_existing_custom_formats: true
 
@@ -22,35 +24,35 @@ sonarr:
       - template: sonarr-quality-definition-anime
       # Profile souhaité - veuillez à avoir les lignes correspondantes activées
       # --- Profile VOSTFR ---
-      - config: quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr.yml
-      - config: custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr.yml
       # --- Profile MULTi.VF ---
-      - config: quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf.yml
-      - config: custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf.yml
       # --- Profile MULTi.VO ---
-      - config: quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo.yml
-      - config: custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo.yml
       # --- Profile Anime MULTi ---
-      - config: quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-multi.yml
-      - config: custom_formats/sonarr-v4-custom-formats-1080p-french-anime-multi.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-multi.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-multi.yml
       # --- Profile Anime VOSTFR ---
-      - config: quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-vostfr.yml
-      - config: custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-vostfr.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr.yml
       # --- Profile VOSTFR x265 ---
-      - config: quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr-x265.yml
-      - config: custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr-x265.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-vostfr-x265.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-vostfr-x265.yml
       # --- Profile MULTi.VF x265 ---
-      - config: quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf-x265.yml
-      - config: custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf-x265.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vf-x265.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vf-x265.yml
       # --- Profile MULTi.VO x265 ---
-      - config: quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo-x265.yml
-      - config: custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo-x265.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-bluray-web-1080p-french-multi-vo-x265.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-bluray-web-1080p-french-multi-vo-x265.yml
       # --- Profile Anime MULTi ---
-      - config: quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-multi-x265.yml
-      - config: custom_formats/sonarr-v4-custom-formats-1080p-french-anime-multi-x265.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-multi-x265.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-multi-x265.yml
       # --- Profile Anime VOSTFR ---
-      - config: quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-vostfr-x265.yml
-      - config: custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr-x265.yml
+      - config: lkis-quality_profiles/sonarr-v4-quality-profile-1080p-french-anime-vostfr-x265.yml
+      - config: lkis-custom_formats/sonarr-v4-custom-formats-1080p-french-anime-vostfr-x265.yml
 
     # Formats Personnalisés (Custom Formats) :
     # https://recyclarr.dev/reference/configuration/custom-formats/

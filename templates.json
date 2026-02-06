@@ -1,0 +1,15 @@
+{
+  "radarr": [
+    {
+      "template": "radarr/templates/movies.yml",
+      "id": "lkis-movies",
+      "hidden": false
+    }
+  ],
+  "sonarr": [
+    {
+      "template": "sonarr/templates/series.yml",
+      "id": "lkis-series"
+    }
+  ]
+}
