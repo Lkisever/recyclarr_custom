@@ -24,23 +24,26 @@ radarr:
       - template: radarr-quality-definition-anime
       # - template: radarr-quality-definition-movie
       # --- Profile VOSTFR ---
-      - template: lkis-radarr-quality-profile-hd-bluray-web-french-vostfr.yml
-      - template: lkis-radarr-custom-formats-hd-bluray-web-french-vostfr.yml
+      - template: lkis-radarr-quality-profile-hd-bluray-web-french-vostfr
       # --- Profile MULTi.VF ---
-      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vf.yml
-      - template: lkis-radarr-custom-formats-hd-bluray-web-french-multi-vf.yml
+      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vf
       # --- Profile MULTi.VO ---
-      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vo.yml
-      - template: lkis-radarr-custom-formats-hd-bluray-web-french-multi-vo.yml
+      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vo
       # --- Profile VOSTFR x265 ---
-      - template: lkis-radarr-quality-profile-hd-bluray-web-french-vostfr-x265.yml
-      - template: lkis-radarr-custom-formats-hd-bluray-web-french-vostfr-x265.yml
+      - template: lkis-radarr-quality-profile-hd-bluray-web-french-vostfr-x265
       # --- Profile MULTi.VF x265 ---
-      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vf-x265.yml
-      - template: lkis-radarr-custom-formats-hd-bluray-web-french-multi-vf-x265.yml
+      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vf-x265
       # --- Profile MULTi.VO x265 ---
-      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vo-x265.yml
-      - template: lkis-radarr-custom-formats-hd-bluray-web-french-multi-vo-x265.yml
+      - template: lkis-radarr-quality-profile-hd-bluray-web-french-multi-vo-x265
+
+      # Custom formats generic
+      - template: lkis-radarr-custom-formats-hd-bluray-web-french-vostfr
+      - template: lkis-radarr-custom-formats-hd-bluray-web-french-multi-vf
+      - template: lkis-radarr-custom-formats-hd-bluray-web-french-multi-vo
+
+      # Custom formats VF + x265
+      - template: lkis-radarr-custom-format-audio
+      - template: lkis-radarr-custom-format-x265
 
     # Formats Personnalisés (Custom Formats) :
     # https://recyclarr.dev/reference/configuration/custom-formats/
@@ -77,23 +80,6 @@ radarr:
           # - name: FR-MULTi-VF-HD
           - name: FR-MULTi-VO-HD
 
-      # Décommentez les lignes suivantes pour accepter les releases en x265 HD avec du HDR/DV
-      - trash_ids:
-          - dc98083864ea246d05a42df0d05f81cc # x265 (HD)
-        assign_scores_to:
-          - name: FR-VOSTFR-HD-x265
-            score: 2000
-          - name: FR-MULTi-VF-HD-x265
-            score: 2000
-          - name: FR-MULTi-VO-HD-x265
-            score: 2000
-      # - trash_ids:
-          # - 839bea857ed2c0a8e084f3cbdbd65ecb # x265 (no HDR/DV)
-        # assign_scores_to:
-          # - name: FR-VOSTFR-HD
-          # - name: FR-MULTi-VF-HD
-          # - name: FR-MULTi-VO-HD
-
       # Décommenter le score associé si vous ne voulez pas de FanSUB.
       - trash_ids:
           - 02e48d30a176c91baf9e15de05e5dc6a # FanSUB
@@ -105,7 +91,7 @@ radarr:
           # - name: FR-MULTi-VO-HD
             # score: -10000
 
-      # Priorité au freeleech si dispo
+      # Priorité au freeleech
       - trash_ids:
           - 0d91270a7255a1e388fa85e959f359d8
         assign_scores_to:
@@ -121,104 +107,3 @@ radarr:
             score: 101
           - name: FR-MULTi-VO-HD
             score: 101
-
-
-      # ===== Versions françaises =====
-      # Activez ou désactiver les Formats Personnalisés suivant si vous souhaitez noter vos releases
-      # avec. Vous pouvez aussi leur attribuer un score en fonction de si vous souhaitez préférer un
-      # certain type d'audio français.
-      # Par exemple si vous préférez la VFF : VFF + VF2 à 101, VFQ à -101, le reste à 0.
-      # Pensez à vérifier aussi à quoi corresponde les différents types de version francophones :
-      # https://trash-guides.info/Radarr/radarr-setup-quality-profiles-french-en/#french-audio-versions
-      - trash_ids:
-          - 404c08fd0bd67f39b4d8e5709319094e # VFF
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          - name: FR-MULTi-VF-HD
-            score: 101
-          - name: FR-MULTi-VO-HD
-            score: 101
-          - name: FR-MULTi-VF-HD-x265
-            score: 101
-          - name: FR-MULTi-VO-HD-x265
-            score: 101
-      - trash_ids:
-          - 4cafa20d5584f6ba1871d1b8941aa3cb # VOF
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          # - name: FR-MULTi-VF-HD
-            # score: 101
-          - name: FR-MULTi-VO-HD
-            # score: 101
-      - trash_ids:
-          - 52772f1cad6b5d26c2551f79bc538a50 # VFI
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          - name: FR-MULTi-VF-HD
-            score: 0
-          - name: FR-MULTi-VO-HD
-            score: 0
-          - name: FR-MULTi-VF-HD-x265
-            score: 0
-          - name: FR-MULTi-VO-HD-x265
-            score: 0
-      - trash_ids:
-          - 29b5f7b1a5f20f64228786c3ab1bdc7d # VF2
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          - name: FR-MULTi-VF-HD
-            score: 101
-          - name: FR-MULTi-VO-HD
-            score: 101
-          - name: FR-MULTi-VF-HD-x265
-            score: 101
-          - name: FR-MULTi-VO-HD-x265
-            score: 101
-      - trash_ids:
-          - b6ace47331a1d3b77942fc18156f6df6 # VFQ
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          - name: FR-MULTi-VF-HD
-            score: -10000
-          - name: FR-MULTi-VO-HD
-            score: -10000
-          - name: FR-MULTi-VF-HD-x265
-            score: -10000
-          - name: FR-MULTi-VO-HD-x265
-            score: -10000
-      - trash_ids:
-          - f7caa1942be5cc547c266bd3dbc2cda9 # VOQ
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          # - name: FR-MULTi-VF-HD
-            # score: 101
-          - name: FR-MULTi-VO-HD
-            # score: 101
-      - trash_ids:
-          - 95aa50f71a01c82354a7a2b385f1c4d8 # VQ
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          - name: FR-MULTi-VF-HD
-            score: -10000
-          - name: FR-MULTi-VO-HD
-            score: -10000
-          - name: FR-MULTi-VF-HD-x265
-            score: -10000
-          - name: FR-MULTi-VO-HD-x265
-            score: -10000
-      - trash_ids:
-          - b3fb499641d7b3c2006be1d9eb014cb3 # VFB
-        assign_scores_to:
-          # - name: FR-VOSTFR-HD
-            # score: 101
-          # - name: FR-MULTi-VF-HD
-            # score: 101
-          - name: FR-MULTi-VO-HD
-            # score: 101

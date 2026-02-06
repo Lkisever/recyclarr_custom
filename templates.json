@@ -9,7 +9,8 @@
   "sonarr": [
     {
       "template": "sonarr/templates/series.yml",
-      "id": "lkis-series"
+      "id": "lkis-series",
+      "hidden": false
     }
   ]
 }

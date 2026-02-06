@@ -6,28 +6,13 @@
             "hidden":  false
         },
         {
-            "id":  "lkis-radarr-custom-formats-hd-bluray-web-french-multi-vf-x265",
-            "template":  "radarr/includes/custom_formats/radarr-custom-formats-hd-bluray-web-french-multi-vf-x265.yml",
-            "hidden":  false
-        },
-        {
             "id":  "lkis-radarr-custom-formats-hd-bluray-web-french-multi-vo",
             "template":  "radarr/includes/custom_formats/radarr-custom-formats-hd-bluray-web-french-multi-vo.yml",
             "hidden":  false
         },
         {
-            "id":  "lkis-radarr-custom-formats-hd-bluray-web-french-multi-vo-x265",
-            "template":  "radarr/includes/custom_formats/radarr-custom-formats-hd-bluray-web-french-multi-vo-x265.yml",
-            "hidden":  false
-        },
-        {
             "id":  "lkis-radarr-custom-formats-hd-bluray-web-french-vostfr",
             "template":  "radarr/includes/custom_formats/radarr-custom-formats-hd-bluray-web-french-vostfr.yml",
-            "hidden":  false
-        },
-        {
-            "id":  "lkis-radarr-custom-formats-hd-bluray-web-french-vostfr-x265",
-            "template":  "radarr/includes/custom_formats/radarr-custom-formats-hd-bluray-web-french-vostfr-x265.yml",
             "hidden":  false
         },
         {
@@ -58,6 +43,16 @@
         {
             "id":  "lkis-radarr-quality-profile-hd-bluray-web-french-vostfr-x265",
             "template":  "radarr/includes/quality_profiles/radarr-quality-profile-hd-bluray-web-french-vostfr-x265.yml",
+            "hidden":  false
+        },
+        {
+            "id":  "lkis-radarr-custom-format-audio",
+            "template":  "radarr/custom_formats/radarr-custom-format-audio.yml",
+            "hidden":  false
+        },
+        {
+            "id":  "lkis-radarr-custom-format-x265",
+            "template":  "radarr/includes/custom_formats/radarr-custom-format-x265.yml",
             "hidden":  false
         }
     ],

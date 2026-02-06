@@ -35,6 +35,7 @@ custom_formats:
       - 2a6039655313bf5dab1e43523b62c374 # MA
     assign_scores_to:
       - name: FR-MULTi-VF-HD
+      - name: FR-MULTi-VF-HD-x265
 
   - trash_ids:
       # Streaming Services
@@ -52,4 +53,6 @@ custom_formats:
       - c2863d2a50c9acad1fb50e53ece60817 # STAN
     assign_scores_to:
       - name: FR-MULTi-VF-HD
+        score: 0
+      - name: FR-MULTi-VF-HD-x265
         score: 0
