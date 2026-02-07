@@ -5,16 +5,6 @@ custom_formats:
   - trash_ids:
       - c9eafd50846d299b862ca9bb6ea91950 # x265 (HD)
     assign_scores_to:
-          - name: FR-VOSTFR-WEB-1080p
-            score: 2000
-          - name: FR-MULTi-VF-WEB-1080p
-            score: 2000
-          - name: FR-MULTi-VO-WEB-1080p
-            score: 2000
-          - name: FR-ANIME-MULTi
-            score: 2000
-          - name: FR-ANIME-VOSTFR
-            score: 2000
           - name: FR-VOSTFR-WEB-1080p-x265
             score: 2000
           - name: FR-MULTi-VF-WEB-1080p-x265
